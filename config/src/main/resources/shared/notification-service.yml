@@ -2,7 +2,7 @@ security:
   oauth2:
     client:
       clientId: notification-service
-      clientSecret: ${NOTIFICATION_SERVICE_PASSWORD}
+      clientSecret: test
       accessTokenUri: http://auth-service:5000/uaa/oauth/token
       grant-type: client_credentials
       scope: server
@@ -29,7 +29,7 @@ spring:
     mongodb:
       host: notification-mongodb
       username: user
-      password: ${MONGODB_PASSWORD}
+      password: test
       database: piggymetrics
       port: 27017
   mail:
